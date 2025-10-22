@@ -1,2 +1,0 @@
-# Formulario
-Actividad de formulario
