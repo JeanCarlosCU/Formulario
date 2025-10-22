@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo de Plantilla Base</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="http://127.0.0.1:5000/vehiculos">Veiculos Antiguos</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5000/#">Ir al Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Acerca de...
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="http://127.0.0.1:5000/animales">Animales exóticos</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="http://127.0.0.1:5000/gustos">Mis Gustos</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="http://127.0.0.1:5000/maravillas">Las Maravillas del Mundo</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="http://127.0.0.1:5000/crear_cuenta">Crear cuenta</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="http://127.0.0.1:5000/iniciar_sesion">Inicia sesion</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true"></a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+<div class="card mb-3">
+<img src="{{ url_for('static', filename='img/ford 1969.png') }}" alt="Ford 1969">
+  <div class="card-body">
+    <h5 class="card-title">Ford 1969</h5>
+    <p class="card-text">La Ford F-100, parte de las Ford F-Series, fue un modelo de camioneta (Pickup) (pick-up en inglés), de tamaño completo, fabricado por Ford Motor Company, que ha sido vendido de forma continua a partir del año 1948 en Estados Unidos, y en variadas fechas en Canadá, México, Brasil, Argentina, Perú, Chile, Colombia y Venezuela.</p>
+    <p class="card-text"><small class="text-body-secondary"></small></p>
+  </div>
+</div>
+
+<div class="card mb-3">
+<img src="{{ url_for('static', filename='img/mercedes 1940.png') }}" alt="Mercedes 1940">
+  <div class="card-body">
+    <h5 class="card-title">Mercedes 1940</h5>
+    <p class="card-text">El Mercedes-Benz 770, también conocido como  Großer Mercedes (en alemán "Gran Mercedes"), era un automóvil grande de lujo construido por Mercedes-Benz de 1930 a 1943. </p>
+    <p class="card-text"><small class="text-body-secondary"></small></p>
+  </div>
+</div>
+
+<div class="card mb-3">
+<img src="{{ url_for('static', filename='img/nissan 1950.png') }}" alt="Nissan 1950">
+  <div class="card-body">
+    <h5 class="card-title">Nissan 1950</h5>
+    <p class="card-text">En 1950, Nissan se centraba en la producción de vehículos todoterreno robustos, como el Nissan Patrol (introducido en 1951), y en la expansión global de la marca Datsun, importando sedanes y camionetas a mercados como Australia y Estados Unidos. La empresa estaba sentando las bases para su crecimiento futuro, aunque el lanzamiento en Estados Unidos con modelos Datsun no ocurriría hasta 1959. </p>
+    <p class="card-text"><small class="text-body-secondary"></small></p>
+  </div>
+</div>
+
+<div class="card mb-3">
+<img src="{{ url_for('static', filename='img/rolls royce 1925.png') }}" alt="Rolls Royce 1925">
+  <div class="card-body">
+    <h5 class="card-title">Rolls Royce 1925</h5>
+    <p class="card-text">El Phantom fue el reemplazo de Rolls-Royce para el original Silver Ghost. Introducido como Nuevo Phantom en 1925, el Phantom tenía un motor más grande que el Silver Ghost y utilizaba válvulas superiores en lugar de las válvulas laterales del Silver Ghost.</p>
+    <p class="card-text"><small class="text-body-secondary"></small></p>
+  </div>
+</div>
+
+<div class="card mb-3">
+<img src="{{ url_for('static', filename='img/volkswagen 1940.png') }}" alt="Volkswagen 1940">
+  <div class="card-body">
+    <h5 class="card-title">Volkswagen</h5>
+    <p class="card-text">En 1940, Volkswagen producía principalmente vehículos militares como el Kübelwagen (Tipo 82), un vehículo de transporte de tropas diseñado por Ferdinand Porsche. Estos vehículos se basaban en el diseño del futuro Escarabajo (el "auto del pueblo" de Volkswagen) y estaban equipados con un motor de \(1000\) cc que les permitía alcanzar una velocidad máxima de \(80\) km/h. Además, existían versiones civiles limitadas y otros modelos militares como el Kommandeurwagen. </p>
+    <p class="card-text"><small class="text-body-secondary"></small></p>
+  </div>
+</div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>
